@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let menu of menuItems" >
+        <a routerLink="{{menu.url}}" [ngClass]="isCurrent(menu.url)?'active':''">{{menu.text}}</a>
+    </li>
+</ul>

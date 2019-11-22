@@ -1,0 +1,13 @@
+
+    <h1 style="display:none">Structural Directives</h1>
+
+    
+    <h3 *ngIf="displayName; then thenBlock else elseBlock">CallHealth</h3>
+
+    <ng-template #thenBlock>
+      <h3>CallHealth Service Pvt Ltd</h3>
+    </ng-template>
+
+    <ng-template #elseBlock>
+      The name is hidden.
+    </ng-template>

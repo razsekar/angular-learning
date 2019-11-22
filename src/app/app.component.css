@@ -1,0 +1,24 @@
+app-header{
+    background: #F44336;
+    height: 50px;
+    display: block;
+    padding: 10px 30px;
+    line-height: 5px;
+    text-align: center;
+    width: calc(100% - 60px);
+}
+app-side-bar{
+    width: 20%;
+    float:left;
+    display:block;
+    background:rgb(193, 221, 245);
+    height: 553px;
+}
+app-content{
+    float: left;
+    display: block;
+    background: #f5f5f5;
+    width: calc(80% - 60px);
+    padding: 30px;
+    height: 523px;
+}
