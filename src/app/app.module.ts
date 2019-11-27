@@ -24,6 +24,7 @@ import { ComponentInteractionModule } from './component-interaction/component-in
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { ServicesComponent } from './services/services.component'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ServicesComponent } from './services/services.component'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ComponentInteractionModule
+    ComponentInteractionModule,
+    HttpClientModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

@@ -1,5 +1,10 @@
 <h3>Employees Setails</h3>
+<input placeholder="Name" type="text" [(ngModel)] = "employee.name" />
+<input placeholder="Salary" type="text" [(ngModel)] = "employee.salary" />
+<input placeholder="Age" type="text" [(ngModel)] = "employee.age" />
+
+<button (click)="create()">Create Employee</button>
 
 <h5 *ngFor="let employee of employeesList">
-    {{employee.id}} : {{employee.name}} : {{employee.department}}
+    {{employee.id}} : {{employee.employee_name}} : {{employee.employee_salary}}
 </h5>

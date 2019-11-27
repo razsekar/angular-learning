@@ -15,10 +15,20 @@ export class EmployeeDetailsComponent implements OnInit {
     {id: 4, name: 'Donald Trump', department: 'Politician'}, */
   ]
 
+  public employee = {};
+
   constructor(public _employeeService: EmployeeService) { }
 
   ngOnInit() {
-    this.employeesList = this._employeeService.getEmployees();
+    this._employeeService.getEmployees().subscribe((result:any) => {
+      this.employeesList = result
+    });
+  }
+
+  create(){
+    this._employeeService.createEmployee(this.employee).subscribe((result:any)=>{
+      console.log(result)
+    })
   }
 
 }
