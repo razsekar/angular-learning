@@ -22,3 +22,11 @@ app-content{
     padding: 30px;
     height: 523px;
 }
+
+::ng-deep app-container{
+    height: 500px;
+    width: 965px;
+    background: #d0c9c9;
+    display: block;
+    padding: 1px 30px;
+}

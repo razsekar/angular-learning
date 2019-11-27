@@ -22,7 +22,8 @@ export class SideBarComponent implements OnInit {
       {url: 'ng-switch-directive', text: '*ngSwitch Directive'},
       {url: 'ng-for-directive', text: '*ngFor Directive'},
       {url: 'component-interaction', text: 'Component Interaction'},
-      {url: 'pipes', text: 'Pipes'}
+      {url: 'pipes', text: 'Pipes'},
+      {url: 'services', text: 'Services'}
     ]
   }
 

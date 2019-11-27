@@ -14,12 +14,16 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
 import { NgForDirectiveComponent } from './ng-for-directive/ng-for-directive.component';
-import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
 import { HeaderComponent } from './header/header.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { ContentComponent } from './content/content.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { EmployeeService } from './employee.service'
+import { ComponentInteractionModule } from './component-interaction/component-interaction.module';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { ServicesComponent } from './services/services.component'
 
 @NgModule({
   declarations: [
@@ -35,19 +39,22 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     NgIfDirectiveComponent,
     NgSwitchDirectiveComponent,
     NgForDirectiveComponent,
-    ComponentInteractionComponent,
     PipesDemoComponent,
     HeaderComponent,
     SideBarComponent,
     ContentComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EmployeeDetailsComponent,
+    EmployeeListComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ComponentInteractionModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

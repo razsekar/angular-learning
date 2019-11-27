@@ -1,0 +1,6 @@
+<h2>Parent Component</h2>
+<input type="text" #parentMessage/><button (click)="sendMessageToChild(parentMessage.value)">Send</button>
+<h4>Child message: </h4>
+<p>{{childMessage}}</p>
+
+<app-child-component [parentMessage]="message" (childMessage)="childMessage = $event"></app-child-component>

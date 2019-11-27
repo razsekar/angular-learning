@@ -11,8 +11,9 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
 import { NgForDirectiveComponent } from './ng-for-directive/ng-for-directive.component';
-import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { ContainerComponent } from './component-interaction/container/container.component';
 import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {path: 'interpolation', component: InterpolationComponent},
@@ -25,8 +26,9 @@ const routes: Routes = [
   {path: 'ng-if-directive', component: NgIfDirectiveComponent},
   {path: 'ng-switch-directive', component: NgSwitchDirectiveComponent},
   {path: 'ng-for-directive', component: NgForDirectiveComponent},
-  {path: 'component-interaction', component: ComponentInteractionComponent},
-  {path: 'pipes', component: PipesDemoComponent}
+  {path: 'component-interaction', component: ContainerComponent},
+  {path: 'pipes', component: PipesDemoComponent},
+  {path: 'services', component: ServicesComponent}
 ];
 
 @NgModule({
